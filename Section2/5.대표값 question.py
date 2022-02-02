@@ -1,11 +1,11 @@
-N = int(input())
+n = int(input())
 a = list(map(int, input().split()))
-avg = round(sum(a)/N)
+avg = round(sum(a)/n)
 min = 2147000000
 
 for idx, x in enumerate(a):
     std = abs(avg-x)
-    if std < min:
+    if std < min :
         min = std
         score = x
         res = idx + 1

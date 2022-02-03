@@ -19,8 +19,9 @@ def isPrime(x):
         return True
 
 for x in a:
-    tmp = reverse(x)
-    if isPrime(tmp):
-        print(tmp, end=' ')
+    rev = reverse(x)
+    if isPrime(rev):
+        print(rev, end=' ')
+
 
 

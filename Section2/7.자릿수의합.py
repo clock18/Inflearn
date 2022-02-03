@@ -4,7 +4,8 @@ a = list(map(int, input().split()))
 def digit_sum(x):
     sum = 0
     while x > 0:
-        sum += x % 10
+        t = x % 10
+        sum += t
         x = x // 10
     return sum
 
@@ -22,3 +23,4 @@ for x in a:
         res = x
 
 print(res)
+

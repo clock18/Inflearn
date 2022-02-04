@@ -1,4 +1,4 @@
-n, m = map(int, input().split())
+n, m  = map(int, input().split())
 a = list(map(int, input().split()))
 lt = 0
 rt = 1
@@ -12,12 +12,11 @@ while True:
             rt += 1
         else:
             break
-    elif tot == m:
+    elif tot == m :
         cnt += 1
         tot -= a[lt]
         lt += 1
     else :
         tot -= a[lt]
         lt += 1
-
 print(cnt)
